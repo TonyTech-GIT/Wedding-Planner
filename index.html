@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES-Wedding_Planner</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Expert Wedding Planner</h1>
+      <p class="caution">
+        ⚠CAUTION. This Expert is limited in the level of information it can
+        provide at this stage. As a result of this, DO NOT enter any other input
+        aside from the one shown in the textbox and ENSURE all textbox's are
+        filled before clicking on results. Doing otherwise will lead to
+        unexpected results. Thank You!⚠
+      </p>
+      <p class="instruction-text">Enter the required details</p>
+
+      <div class="input-container">
+        <div class="input" id="input">
+          <label for="weather"> Weather </label>
+          <input
+            class="weather-input"
+            id="weatherInput"
+            type="text"
+            placeholder="Rainy, Sunny..."
+          />
+        </div>
+        <div class="input" id="input">
+          <label for="food-type"> Food </label>
+          <input
+            class="food-input"
+            id="foodInput"
+            type="text"
+            placeholder="African, Foreign..."
+          />
+        </div>
+        <div class="input" id="input">
+          <label for="location"> Location </label>
+          <input
+            class="location-input"
+            id="locationInput"
+            type="text"
+            placeholder="Africa, Europe, Asia, North-America..."
+          />
+        </div>
+        <div class="input" id="input">
+          <label for="wed-type"> Wedding-Type </label>
+          <input
+            class="wed_type-input"
+            id="wedTypeInput"
+            type="text"
+            placeholder="White, Court..."
+          />
+        </div>
+      </div>
+
+      <!-- <a href="#" class="btn">
+        <button type="button">Generate Result</button>
+      </a> -->
+      <a href="#" class="btn">
+        <button id="resultBtn" type="button" class="result">Result</button>
+        <button id="clearBtn" type="button" class="clear">Clear</button>
+      </a>
+
+      <!-- OUTPUT SECTION.... -->
+
+      <div class="output-container" id="outputContainer">
+        <div class="weather_output output">
+          <label
+            class="output-label weatherLabel"
+            id="weatherLabel"
+            for="weather"
+            >Weather:</label
+          >
+          <p id="weatherText" class="output-text weather-text">Weather</p>
+        </div>
+        <div class="food-type_output output">
+          <label
+            class="output-label foodTypeLabel"
+            id="foodTypeLabel"
+            for="food-type"
+            >Food-type:</label
+          >
+
+          <p id="foodTypeText" class="output-text food-type-text">Food-Type</p>
+        </div>
+
+        <div class="location_output output">
+          <label
+            class="output-label locationLabel"
+            id="locationLabel"
+            for="location"
+            >Location:</label
+          >
+
+          <p id="locationText" class="output-text location-text">Location</p>
+        </div>
+
+        <div class="wed-type_output output">
+          <label class="output-label" id="wedTypeLabel" for="wedType"
+            >Wed-Type:</label
+          >
+
+          <p id="wedTypeText" class="output-text wed-type-text">Wed-type</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
